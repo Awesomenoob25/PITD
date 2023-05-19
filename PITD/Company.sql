@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Company]
+(
+	[NBN] INT NOT NULL PRIMARY KEY,
+	[BusinessName] VARCHAR(32) NOT NULL
+)

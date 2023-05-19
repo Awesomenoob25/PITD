@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Tax_Information]
+(
+	[TFN] INT NOT NULL PRIMARY KEY CHECK (TFN between 100000000 and 999999999),
+	[FName] VARCHAR(32) NOT NULL,
+	[LName] VARCHAR(32) NOT NULL
+	)

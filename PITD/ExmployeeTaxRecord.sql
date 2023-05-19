@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[EmployeeTaxRecord]
+(
+	[TFN] INT NOT NULL CHECK (TFN between 100000000 and 999999999),
+	[CompanyNBN] INT NOT NULL,
+	[EmployeeID] INT NOT NULL,
+	FOREIGN KEY (CompanyNBN) REFERENCES Company(NBN),
+	FOREIGN KEY (TFN) REFERENCES Tax_Information(TFN)
+)
